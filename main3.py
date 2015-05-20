@@ -2,16 +2,16 @@
 import io,sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='shift-jis')
 
+# ファイル書き込み用関数
 def file_write(file_name, text):
-    with open(file_name, mode='w', encoding='utf-8') as f:
-        f.write(text)
-
+    with open(file_name, mode='w', encoding='utf-8') as f_out:
+        f_out.write(text)
 
 if __name__ == '__main__':
     col1 = []
     col2 = []
-    with open('./address.txt', mode='r', encoding='utf-8') as f:
-        for line in f:
+    with open('./address.txt', mode='r', encoding='utf-8') as f_in:
+        for line in f_in:
             sp = line.split('\t')
             col1.append(sp[0])
             col2.append(sp[1].rstrip())

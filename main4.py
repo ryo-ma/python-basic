@@ -12,7 +12,7 @@ if __name__ == '__main__':
         col2.extend(f.readlines())
     print(col2)
     for s1, s2 in zip(col1, col2):
-        result += s1.rstrip() + "\t" +  s2
+        result += s1.rstrip() + "\t" + s2
 
     with open('result1.txt', mode='w', encoding='utf-8') as f:
         f.write(result)
