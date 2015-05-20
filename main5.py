@@ -10,4 +10,5 @@ if __name__ == '__main__':
     with open('./address.txt', mode='r', encoding='utf-8') as f:
         lines = f.readlines()
         index = int(argvs[1])
-        print(lines[:index])
+        for x in lines[:index]:
+            print(x.rstrip())
