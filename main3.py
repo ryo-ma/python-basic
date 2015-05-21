@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import io,sys
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='shift-jis')
+import io, sys
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # ファイル書き込み用関数
 def file_write(file_name, text):

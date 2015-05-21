@@ -8,3 +8,7 @@ Python 3.4.3 :: Continuum Analytics, Inc.
 
 ##統合開発環境
 PyCharm
+
+##実行方法
+PyCharmにインポートする
+File -> importSetting -> 選択
